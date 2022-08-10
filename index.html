@@ -10,9 +10,16 @@
   <body>
     <h1>Nemix</h1>
     <p>Hello World!</p>
-    <a href="https://github.com/xNemix" target="_blank"
-      ><img
-        src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif"
-    /></a>
+    <button onclick="onClick()">Trykk Her!</button>
+    <div id="container1"></div>
+    <script>
+      const onClick = () => {
+        document.getElementById('container1').innerHTML = /*HTML*/ `
+          <a href="https://github.com/xNemix" target="_blank"
+          ><img
+          src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif"
+          /></a>`;
+      };
+    </script>
   </body>
 </html>
