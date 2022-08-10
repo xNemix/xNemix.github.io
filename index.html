@@ -6,30 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nemix</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <h1>Nemix</h1>
     <p>Hello World!</p>
     <button
-      style="background-color: red; color: white; width: 200px; height: 50px"
-      onclick="onClick()"
+      style="
+        background-color: teal;
+        color: white;
+        width: 150px;
+        height: 40px;
+        border-radius: 5em;
+      "
+      onclick="onClickPortfolio()"
     >
-      Ikke Trykk Her
+      Portfolio
     </button>
+
+    <a href="https://github.com/xNemix" target="_blank"
+      ><button
+        style="
+          background-color: gray;
+          color: white;
+          width: 150px;
+          height: 40px;
+          border-radius: 5em;
+        "
+      >
+        Github
+      </button></a
+    >
+
     <div id="container1"></div>
-    <script>
-      const onClick = () => {
-        document.getElementById('container1').innerHTML = /*HTML*/ `
-          <a href="https://github.com/xNemix" target="_blank"
-          ><img
-          src="https://c.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif"
-          /></a>
-          
-          <audio autoplay loop>
-            <source src="audio/rickroll.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-          </audio>`;
-      };
-    </script>
   </body>
 </html>
