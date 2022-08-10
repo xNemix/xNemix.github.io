@@ -10,15 +10,22 @@
   <body>
     <h1>Nemix</h1>
     <p>Hello World!</p>
-    <button onclick="onClick()">Trykk Her!</button>
+    <button style="background-color: red; color: white" onclick="onClick()">
+      Ikke Trykk Her
+    </button>
     <div id="container1"></div>
     <script>
       const onClick = () => {
         document.getElementById('container1').innerHTML = /*HTML*/ `
           <a href="https://github.com/xNemix" target="_blank"
           ><img
-          src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif"
-          /></a>`;
+          src="https://c.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif"
+          /></a>
+          
+          <audio autoplay loop>
+            <source src="audio/rickroll.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>`;
       };
     </script>
   </body>
